@@ -151,6 +151,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "[CI] Update throttler image to ${{ github.run_id }} from ${{ github.repository }} [skip ci]"
+            git commit -m "[CI] Update expenses image to ${{ github.run_id }} from ${{ github.repository }} [skip ci]"
             git push origin main  # or your target branch
           fi
