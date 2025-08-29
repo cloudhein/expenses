@@ -1,5 +1,7 @@
 FROM golang:1.22-alpine AS builder
 
+LABEL maintainer="NandaHein"
+
 ENV CGO_ENABLED=0
 
 WORKDIR /app
