@@ -1,6 +1,6 @@
 FROM golang:1.22-alpine AS builder
 
-LABEL maintainer="HtetNandaHein"
+LABEL maintainer="NandaHein"
 
 ENV CGO_ENABLED=0
 
