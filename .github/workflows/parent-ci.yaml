@@ -16,6 +16,10 @@ jobs:
       working-directory: 'cmd/api'
       go-version: ">=1.22"
       binary-name: 'expenses' # This maps to -o expenses
+      sonar-project-key: cloudhein_expenses
+      sonar-organization: cloudhein
+    secrets:
+      sonar_token: ${{ secrets.SONAR_TOKEN }}
 
   containerize:
     runs-on: ubuntu-latest
